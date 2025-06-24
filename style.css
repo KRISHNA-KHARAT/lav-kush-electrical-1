@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+ul {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Fade-in animation on load */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect for links */
+a:hover {
+  text-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+/* Button-like nav links */
+nav a {
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: rgba(255,255,255,0.1);
+}
